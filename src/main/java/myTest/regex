@@ -1,0 +1,10 @@
+insert into PN_LaunchScreen (cityId, poster, schema) values (1,"https://img.piaoniu.com/launchScreen/2f5f71baaf0ced0f88a816a9f855d330b20d0b26.jpg?imageView2/2/w/750/h/1334",  "piaoniu://web?url=https%3A%2F%2Fm.piaoniu.com%2Fcampaign%2Fcollection%2Findex.html%3Fid%3D39",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (2,"https://img.piaoniu.com/launchScreen/84518f253b9d0bcf6334af764731e856b08189ad.jpg?imageView2/2/w/750/h/1334", "",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (3,"https://img.piaoniu.com/launchScreen/6e283de5b335540bca1f280258430091133bb71a.jpg?imageView2/2/w/750/h/1334", "piaoniu://activity_detail?activityId=13614&channel=kphz13614",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (4,"https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334", "piaoniu://",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (5,"https://img.piaoniu.com/launchScreen/50213c981da223e984da8969c65562f5f7e92920.jpg?imageView2/2/w/750/h/1334", "piaoniu://activity_detail?activityId=33050&channel=kpnj",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (7,"https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334", "piaoniu://",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (8,"https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334", "piaoniu://",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (9,"https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334", "piaoniu://",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (16,"https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334","piaoniu://",3000);
+insert into PN_LaunchScreen (cityId, poster, schema) values (344,https://img.piaoniu.com/launchScreen/f734b352db55acd71108d12925d305624848f8a0.jpg?imageView2/2/w/750/h/1334","piaoniu://",3000);
