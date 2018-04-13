@@ -2,14 +2,12 @@ package myTest;
 
 import com.google.common.collect.Lists;
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -26,16 +24,16 @@ public class ExcelTest {
         boolean right;
     }
 
-    public static void millionHero() throws IOException, InvalidFormatException {
-        Workbook workbook = WorkbookFactory.create(new File("/Users/caifeng/Downloads/百万英雄问题.xlsx"));
+    public static void millionHero() throws Exception{
+        Workbook workbook = WorkbookFactory.create(new File("/Users/caifeng/Downloads/题库667.xlsx"));
         workbook.forEach(sheet -> {
             System.out.println("=> " + sheet.getSheetName());
-            for (int i = 0; i <= 0 ; i++) {
+            for (int i = 0; i <= 381 ; i++) {
                 Row row = sheet.getRow(i);
                 StringBuilder sb = new StringBuilder();
-                //sb.append("INSERT INTO `PN_MillionHeroQuestion` (`campaignId`, `title`, `choices`, `addTime`, `updateTime`)\n"
-                //    + "VALUES (1,\'"+row.getCell(0)+"\', \'[");
-                sb.append("update `PN_MillionHeroQuestion` set choices = \'[");
+                sb.append("INSERT INTO `PN_MillionHeroQuestion` (`campaignId`, `title`, `choices`, `addTime`, `updateTime`)\n"
+                    + "VALUES (667,\'"+row.getCell(0)+"\', \'[");
+                //sb.append("update `PN_MillionHeroQuestion` set choices = \'[");
                 String answer = row.getCell(5).toString().toUpperCase().replace('\u00A0', ' ').trim();
                 if (answer.equals("A")) {
                     sb.append("{\"choice\":\"A\",\"content\":\"" + row.getCell(1).toString() + "\",\"right\":true},");
@@ -58,9 +56,13 @@ public class ExcelTest {
                 } else {
                     sb.append("{\"choice\":\"D\",\"content\":\"" + row.getCell(4).toString() + "\"}");
                 }
-                //sb.append("]\',now(),now());");
-                sb.append("]\' where title = \""+row.getCell(0)+ "\";");
+                sb.append("]\',now(),now());");
+                //sb.append("]\' where title = \""+row.getCell(0)+ "\";");
                 System.out.println(sb.toString());
+                if (!sb.toString().contains("true")) {
+                    System.out.println("不包含正确回答！！");
+                    break;
+                }
             }
         });
         System.out.println(workbook.getAllNames());
@@ -87,7 +89,7 @@ public class ExcelTest {
         choiceMap.get("");
     }
 
-    public static void main(String[] args) throws IOException, InvalidFormatException {
+    public static void main(String[] args) throws Exception {
         //toMap();
         millionHero();
     }

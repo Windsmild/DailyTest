@@ -129,8 +129,9 @@ public class RegTest {
 
     }
     public static void main(String[] args) {
-        System.out.println(Runtime.getRuntime().availableProcessors());
+        System.out.println(rawHtml.length());
 
+        //System.out.println(Runtime.getRuntime().availableProcessors());
         //mobileNo();
         //replaceHtmlImg();
         //replace_src(rawHtml);

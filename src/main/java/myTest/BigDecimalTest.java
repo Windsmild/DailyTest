@@ -11,12 +11,6 @@ public class BigDecimalTest {
 
     public static final BigDecimal ONE = newBigDecimal(1);
 
-    public static void main(String[] args) {
-        BigDecimal es = new BigDecimal(20);
-        BigDecimal ss = new BigDecimal(30);
-        System.out.println(es.subtract(ss));
-        System.out.println(plus(es,ss));
-    }
 
     /**
      * 返回2位小数
@@ -33,6 +27,21 @@ public class BigDecimalTest {
             zero = zero.add(num);
         }
         return zero;
+    }
+
+    public static void toInt(){
+        int i = new BigDecimal("1.23235").multiply(new BigDecimal("100")).intValue();
+        System.out.println(i);
+    }
+    public static void movePoint() {
+        System.out.println(BigDecimal.valueOf(123).movePointLeft(2));
+
+    }
+    public static void main(String[] args) {
+        movePoint();
+        toInt();
+        //BigDecimal es = new BigDecimal(""+5.00);
+        //System.out.println(es.setScale(0, RoundingMode.HALF_DOWN));
     }
 
 }

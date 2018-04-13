@@ -1,11 +1,14 @@
 package myTest;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.apache.commons.lang.math.RandomUtils;
 
 /**
  * Created by Stephen Cai on 2017-11-08 11:30.
@@ -47,8 +50,17 @@ public class ListTest {
         System.out.println(raw.subList(0, 10));
     }
 
+    public static void whileTest() {
+        Set<Integer> questionIdsForUser = Sets.newHashSet();
+        //每人5个问题
+        while (true) {
+            questionIdsForUser.add(RandomUtils.nextInt());
+        }
+    }
+
     public static void main(String[] args) {
-        subList();
+        whileTest();
+        //subList();
     }
 }
 

@@ -1,6 +1,7 @@
 package myTest;
 
 import com.google.common.collect.Lists;
+import java.sql.Timestamp;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -12,8 +13,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
 import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
 
 /**
  * Created by Stephen Cai on 2017-05-26 15:56.
@@ -26,19 +27,6 @@ public class TimeTest {
 	private static class User {
 		int userId;
 		String name;
-	}
-
-	public static void main(String[] args) throws InterruptedException {
-		long start = System.currentTimeMillis();
-		//Thread.sleep(10000);
-		long end = System.currentTimeMillis();
-		System.out.println("jos syncActivity end cost " +(end - start)/ 60 + "分");
-		System.out.println("jos");
-
-		System.out.println((double)10000L/3);
-		System.out.println(new Date().after(null));
-		System.out.println(new DateTime().withTimeAtStartOfDay().toDateTime(DateTimeZone.UTC).toString());
-		System.out.println(new DateTime().plusDays(1).withTimeAtStartOfDay().toDateTime(DateTimeZone.UTC).toString());
 	}
 
 
@@ -77,4 +65,16 @@ public class TimeTest {
 
 		return dateList.stream().sorted(Comparator.comparing(Date::getTime)).collect(Collectors.toList());
 	}
+
+	public static void timestamp() {
+		String timestamp = new Timestamp(System.currentTimeMillis()).getTime()+"";
+		System.out.println(timestamp);
+
+		System.out.println(DateFormatUtils.format(new Date(), "yyyyMMddHHmmssSSS"));
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+	    timestamp();
+	}
+
 }
