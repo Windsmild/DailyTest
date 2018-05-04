@@ -11,7 +11,15 @@ import java.util.List;
  * Created by Stephen Cai on 2017-10-12 12:47.
  */
 public class StringTest {
-    public static void main(String[] args) throws UnknownHostException {
+    public static String replaceColon(String rawString) {
+        return rawString.replace(":", "点");
+    }
+
+    public static String replaceForbidWords(String rawString) {
+        return rawString.replaceAll("日月|月", "");
+    }
+
+    public static void before() throws UnknownHostException {
         System.out.println("\"协调能效\"".replace("\"", "\\\""));
         System.setProperty("java.net.preferIPv4Stack", "true");
         System.out.println(InetAddress.getLocalHost());
@@ -30,11 +38,21 @@ public class StringTest {
         System.out.println(String.valueOf(new BigDecimal(0.1).multiply(new BigDecimal(555.547)).setScale(2, RoundingMode.HALF_UP)));
     }
 
-    public static String replaceColon(String rawString) {
-        return rawString.replace(":", "点");
+    public static void nullPlus() {
+
+        Object kong = null;
+        System.out.println(" " + kong);
     }
 
-    public static String replaceForbidWords(String rawString) {
-        return rawString.replaceAll("日月|月", "");
+    public static void trim() {
+        String origin = "953 347 626 340";
+        System.out.println(origin.replaceAll("\\s",""));
     }
+    public static void main(String[] args) throws UnknownHostException {
+        Integer i = -1;
+        System.out.println(i);
+        //nullPlus();
+        trim();
+    }
+
 }

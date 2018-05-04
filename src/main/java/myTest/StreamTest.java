@@ -1,6 +1,8 @@
 package myTest;
 
+import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -20,8 +22,8 @@ public class StreamTest {
         Set<Object> seen = ConcurrentHashMap.newKeySet();
         return t -> seen.add(keyExtractor.apply(t));
     }
+    public static void distinctByKeyTest() {
 
-    public static void main(String[] args) {
         List<String> ss = Lists.newArrayList();
         System.out.println(sout(true, "", ()-> ss.get(0)));
         Stream.of("one", "two", "three", "four")
@@ -43,6 +45,7 @@ public class StreamTest {
         System.out.println(users);
     }
 
+
     public static String sout(Boolean b, String s, Supplier<String> f) {
         if (b) {
             return f.get();
@@ -56,5 +59,19 @@ public class StreamTest {
             listR.add(f.apply(t));
         }
         return listR;
+    }
+    public static void strToInt()  {
+        List<Integer> activityIds = Lists.newArrayList(1,2,3);
+        Set<String> ignoreSet = Sets.newHashSet("");
+        ignoreSet.contains(1);
+        Set<Integer> ignoreIntSet = Splitter.on(",").splitToList("1,2").stream().map(String::trim).map(Integer::parseInt).collect(Collectors.toSet());
+        System.out.println(ignoreIntSet.contains(1));
+        System.out.println( ignoreSet.stream().mapToInt(Integer::valueOf).sum());
+        List<Integer> integers = activityIds.stream().filter(ignoreSet::contains).collect(Collectors.toList());
+        System.out.println(integers);
+
+    }
+    public static void main(String[] args) {
+        strToInt();
     }
 }

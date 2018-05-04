@@ -2,6 +2,7 @@ package myTest;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import lombok.Data;
 
 /**
  * Created by Stephen Cai on 2017-10-19 15:52.
@@ -37,9 +38,16 @@ public class BigDecimalTest {
         System.out.println(BigDecimal.valueOf(123).movePointLeft(2));
 
     }
+    @Data
+    static class Venue {
+        private BigDecimal time;
+    }
     public static void main(String[] args) {
         movePoint();
         toInt();
+        Venue venue = new Venue();
+        venue.setTime(null);
+        System.out.println(venue.getTime().equals(new BigDecimal("0")));
         //BigDecimal es = new BigDecimal(""+5.00);
         //System.out.println(es.setScale(0, RoundingMode.HALF_DOWN));
     }

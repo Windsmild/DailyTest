@@ -25,10 +25,10 @@ public class ExcelTest {
     }
 
     public static void millionHero() throws Exception{
-        Workbook workbook = WorkbookFactory.create(new File("/Users/caifeng/Downloads/题库667.xlsx"));
+        Workbook workbook = WorkbookFactory.create(new File("/Users/caifeng/Downloads/题库667.2.xlsx"));
         workbook.forEach(sheet -> {
             System.out.println("=> " + sheet.getSheetName());
-            for (int i = 0; i <= 381 ; i++) {
+            for (int i = 1; i <= 400 ; i++) {
                 Row row = sheet.getRow(i);
                 StringBuilder sb = new StringBuilder();
                 sb.append("INSERT INTO `PN_MillionHeroQuestion` (`campaignId`, `title`, `choices`, `addTime`, `updateTime`)\n"

@@ -131,7 +131,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>${jackson-version}</version>
+        <version>${jackson-version}</version>
     </dependency>
     <!--https://www.callicoder.com/java-read-excel-file-apache-poi/-->
     <dependency>
@@ -169,6 +169,11 @@
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
       <version>1.4.10</version>
+    </dependency>
+    <dependency>
+      <groupId>JZSignature</groupId>
+      <artifactId>JZSignature</artifactId>
+      <version>1.0.0</version>
     </dependency>
   </dependencies>
 
