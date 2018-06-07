@@ -73,8 +73,12 @@ public class TimeTest {
 		System.out.println(DateFormatUtils.format(new Date(), "yyyyMMddHHmmssSSS"));
 	}
 
+	public static void addMonth() {
+	    DateTime now = new DateTime();
+		System.out.println(now.plusMonths(1));
+	}
 	public static void main(String[] args) throws InterruptedException {
-	    timestamp();
+	    addMonth();
 	}
 
 }

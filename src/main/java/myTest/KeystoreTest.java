@@ -6,20 +6,21 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
-import sun.misc.BASE64Encoder;
+import java.util.Base64;
 
 /**
  * 从keystore中获取privateKey和publicKey
+ *
  * @author Stephen Cai
  * @date 2018-05-07 13:40
  */
 public class KeystoreTest {
-     private static String getPublicKey(String cerPath) throws Exception {
+    private static String getPublicKey(String cerPath) throws Exception {
         CertificateFactory certificatefactory = CertificateFactory.getInstance("X.509");
         FileInputStream fis = new FileInputStream(cerPath);
         X509Certificate Cert = (X509Certificate) certificatefactory.generateCertificate(fis);
         PublicKey pk = Cert.getPublicKey();
-        String publicKey = new BASE64Encoder().encode(pk.getEncoded());
+        String publicKey = Base64.getEncoder().encodeToString(pk.getEncoded());
         return publicKey;
     }
 
@@ -29,7 +30,7 @@ public class KeystoreTest {
         ks.load(is, storePw.toCharArray());
         is.close();
         PrivateKey key = (PrivateKey) ks.getKey(alias, keyPw.toCharArray());
-        String privateKey = new BASE64Encoder().encode(key.getEncoded());
+        String privateKey = Base64.getEncoder().encodeToString(key.getEncoded());
         return privateKey;
     }
 
@@ -51,7 +52,7 @@ public class KeystoreTest {
         PublicKey publicKey = cert.getPublicKey();
         PrivateKey privateKeyprivateKey = (PrivateKey) ks.getKey(alias, pswd.toCharArray());
         System.out.println("privateKey");
-        System.out.println(getPrivateKey(storePath,alias,pswd,pswd));
+        System.out.println(getPrivateKey(storePath, alias, pswd, pswd));
         System.out.println("publicKey");
         System.out.println(getPublicKey(cerPath));
     }
