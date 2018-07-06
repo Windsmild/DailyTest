@@ -20,4 +20,5 @@ node_modules
 .ensime**
 piaoniu-op/src/main/resources/static
 .meghanada
+.idea/workspace.xml
 
