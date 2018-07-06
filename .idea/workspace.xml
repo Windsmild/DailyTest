@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4440a69e-9202-4771-98f1-b87461ca0cda" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/BatchQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/LocalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/designMode/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/designMode/ConcreteCompany.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/designMode/FinanceDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myTest/designMode/HRDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myTest/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myTest/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myTest/Feed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myTest/ListTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,14 +28,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/myTest/designMode/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="227">
+              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#205#206#0" expanded="true" />
                 <element signature="e#237#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="914" selection-start-line="914" selection-end-line="914" />
+              <folding>
+                <element signature="e#41320#41321#0" expanded="true" />
+                <element signature="e#41365#41366#0" expanded="true" />
+                <element signature="e#41803#41833#0" expanded="true" />
+                <element signature="e#42491#42521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/myTest/ListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="587" column="60" selection-start-line="587" selection-start-column="45" selection-end-line="587" selection-end-column="60" />
+              <folding>
+                <element signature="e#10069#10070#0" expanded="true" />
+                <element signature="e#10107#10108#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,9 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>saxoncai@163.com</find>
-      <find>mao</find>
-      <find>uuid</find>
       <find>datef</find>
       <find>caifeng</find>
       <find>areaImage</find>
@@ -141,6 +179,9 @@
       <find>lombok</find>
       <find>@data</find>
       <find>cookieva</find>
+      <find>iterator</find>
+      <find>iterator(</find>
+      <find>iterator.remove</find>
     </findStrings>
     <replaceStrings>
       <replace>insert into  `PN_QixiQuestion` ( `set`, `title`, `choices`, `status`, `addTime`, `updateTime`) values (4, '$1','[{&quot;choice&quot;:&quot;A&quot;,&quot;content&quot;:&quot;$2&quot;,&quot;score&quot;:$6},{&quot;choice&quot;:&quot;B&quot;,&quot;content&quot;:&quot;$3&quot;,&quot;score&quot;:$7},{&quot;choice&quot;:&quot;C&quot;,&quot;content&quot;:&quot;$4&quot;,&quot;score&quot;:$8}]', 1, now(), now());</replace>
@@ -164,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/myTest/ExcelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/mail/MyMail.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/RegTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/TimeTest.java" />
@@ -212,9 +252,10 @@
         <option value="$PROJECT_DIR$/src/main/java/myTest/BatchQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/HRDepartMent.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/ConcreteCompany.java" />
-        <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/HRDepartment.java" />
         <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/FinanceDepartment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/myTest/designMode/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/myTest/ListTest.java" />
       </list>
     </option>
   </component>
@@ -248,9 +289,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="517" />
     <option name="y" value="23" />
-    <option name="width" value="763" />
+    <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -519,7 +559,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Company">
+  <component name="RunManager" selected="Application.ListTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -556,8 +596,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Java9And10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="myTest.Java9And10" />
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myTest.ListTest" />
       <module name="MavenTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -687,19 +727,19 @@
       <envs />
     </configuration>
     <list>
-      <item itemvalue="Application.Java9And10" />
       <item itemvalue="Application.ForTest" />
       <item itemvalue="Application.LocalTest" />
       <item itemvalue="Application.BatchQueue" />
       <item itemvalue="Application.Company" />
+      <item itemvalue="Application.ListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.Company" />
         <item itemvalue="Application.BatchQueue" />
         <item itemvalue="Application.LocalTest" />
         <item itemvalue="Application.ForTest" />
-        <item itemvalue="Application.Java9And10" />
       </list>
     </recent_temporary>
   </component>
@@ -896,7 +936,7 @@
       <workItem from="1529129291372" duration="1049000" />
       <workItem from="1529134857648" duration="595000" />
       <workItem from="1529830904864" duration="3583000" />
-      <workItem from="1530417303103" duration="1225000" />
+      <workItem from="1530417303103" duration="4011000" />
     </task>
     <servers />
   </component>
@@ -909,7 +949,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="843776000" />
+    <option name="totallyTimeSpent" value="846562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -925,24 +965,24 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3259587" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.48402557" visible="true" weight="0.38905326" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48402557" weight="0.38905326" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" sideWeight="0.49676898" weight="0.32890856" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.42758253" side_tool="true" weight="0.16283925" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.42326334" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57241744" weight="0.18093385" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57241744" weight="0.18047337" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.23354565" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49676898" weight="0.31804734" />
       <window_info id="Designer" order="8" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49490538" weight="0.30513176" />
       <window_info id="Web" order="7" sideWeight="0.5050946" side_tool="true" weight="0.2200393" />
       <window_info anchor="right" id="Database" order="5" weight="0.32956383" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.3263328" />
+      <window_info id="Structure" order="9" visible="true" weight="0.3263328" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33284023" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="JRebel" order="1" side_tool="true" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1195,11 +1235,17 @@
           <properties />
           <option name="timeStamp" value="116" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/myTest/ListTest.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="121" />
+      <option name="time" value="123" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1258,26 +1304,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/myTest/CycleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#323#324#0" />
-            <element signature="e#371#372#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myTest/IntTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myTest/RSASecurityUtil2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/myTest/MyCer.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/security/cert/Certificate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
@@ -1663,12 +1689,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/myTest/designMode/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="227">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding>
             <element signature="e#205#206#0" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="587" column="60" selection-start-line="587" selection-start-column="45" selection-end-line="587" selection-end-column="60" />
+          <folding>
+            <element signature="e#10069#10070#0" expanded="true" />
+            <element signature="e#10107#10108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="914" selection-start-line="914" selection-end-line="914" />
+          <folding>
+            <element signature="e#41320#41321#0" expanded="true" />
+            <element signature="e#41365#41366#0" expanded="true" />
+            <element signature="e#41803#41833#0" expanded="true" />
+            <element signature="e#42491#42521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myTest/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>

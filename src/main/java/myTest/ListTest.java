@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import lombok.AllArgsConstructor;
@@ -58,8 +59,19 @@ public class ListTest {
         }
     }
 
+    public static void delete() {
+        List<Integer> raw = Lists.newArrayList(1, 2, 3, 4, 5,6,7);
+        Iterator<Integer> iterator = raw.iterator();
+        while (iterator.hasNext()) {
+           Integer i = iterator.next();
+           if (i == 5) {
+               iterator.remove();
+           }
+        }
+    }
     public static void main(String[] args) {
-        whileTest();
+        delete();
+        //whileTest();
         //subList();
     }
 }
