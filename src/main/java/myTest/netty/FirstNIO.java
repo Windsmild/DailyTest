@@ -1,4 +1,4 @@
-package myTest.nioTest;
+package myTest.netty;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,8 +16,8 @@ public class FirstNIO {
         FileChannel fc = fin.getChannel();
 
         FileOutputStream fout = new FileOutputStream("writesomebytes.txt");
-        FileChannel fc1 = fout.getChannel();
 
+        FileChannel fc1 = fout.getChannel();
         ByteBuffer buffer = ByteBuffer.allocate(1024);
 
         //for (int i = 0; i < message.length; ++i) {
