@@ -1,10 +1,53 @@
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '当你有幸见到偶像之后，第一句话会说些什么呢？','[{"choice":"A","content":"求签名","score":7},{"choice":"B","content":"求合影","score":8},{"choice":"C","content":"求拥抱","score":6.2}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '童话中卖火柴的女孩长大了，你觉得她会跟谁结婚？','[{"choice":"A","content":"正直的警察","score":9},{"choice":"B","content":"关心她的流浪者","score":7},{"choice":"C","content":"买火柴的人","score":10}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '你通常是怎样吃玉米？','[{"choice":"A","content":"由上往下啃着吃","score":6},{"choice":"B","content":"折成两半在吃","score":8.4},{"choice":"C","content":"从中间下手","score":7.6}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '有一只猪，它走啊走啊，走到了英国,结果他变成了什么?','[{"choice":"A","content":"会说英文的猪","score":8},{"choice":"B","content":"Pig","score":7},{"choice":"C","content":"火腿","score":9.8}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '如果把兰花比做女人，你会以什么花比喻男人？','[{"choice":"A","content":"有钱花","score":7.1},{"choice":"B","content":"随便花","score":9.2},{"choice":"C","content":"捕蝇草","score":8.8}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '给你一次和票牛员工嗨聊的机会，你最想和谁一起？','[{"choice":"A","content":"程序小哥","score":9},{"choice":"B","content":"前台小姐姐","score":6.2},{"choice":"C","content":"霸道总裁","score":8}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '红灯停止，绿灯前进，红绿灯一起亮代表呢？','[{"choice":"A","content":"请你边走边来一段freestyle","score":10},{"choice":"B","content":"灯坏了","score":9},{"choice":"C","content":"提醒你是时候该看演出了","score":5.2}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '假如世界末日来临，你只能解救一种动物，你会救以下哪一种？ ','[{"choice":"A","content":"兔","score":6},{"choice":"B","content":"羊","score":8},{"choice":"C","content":"票牛的小蜗牛","score":8.9}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `updateTime`)  values (1,4, '你觉得最可怕的病是？','[{"choice":"A","content":"精神病","score":7},{"choice":"B","content":"看演出成瘾","score":10},{"choice":"C","content":"觉得自己没有病","score":9.1}]', 1, now(), now());  
-insert into `PN_QixiQuestion` (`id`, `set`, `title`, `choices`, `status`, `addTime`, `uppdateTime`)  values (1,4, '七夕你最想看什么类型的演出？','[{"choice":"A","content":"惊悚恐怖片","score":9},{"choice":"B","content":"摇滚嗨翻天","score":6.4},{"choice":"C","content":"票牛什么折扣看什么","score":7.9}]', 1, now(), now());
+当前血量为0.0时候使用技能消耗血量0.0,恢复血量为6.0赚了6.0
+当有不死鸟之眼时候
+当前血量为0.0时候使用技能消耗血量0.0,恢复血量为9.6赚了9.6
+
+
+当前血量为10.0时候使用技能消耗血量0.8,恢复血量为5.4赚了4.6
+当有不死鸟之眼时候
+当前血量为10.0时候使用技能消耗血量0.8,恢复血量为8.3赚了7.5
+
+
+当前血量为20.0时候使用技能消耗血量1.6,恢复血量为4.8赚了3.2
+当有不死鸟之眼时候
+当前血量为20.0时候使用技能消耗血量1.6,恢复血量为7.1赚了5.5
+
+
+当前血量为30.0时候使用技能消耗血量2.4,恢复血量为4.2赚了1.8
+当有不死鸟之眼时候
+当前血量为30.0时候使用技能消耗血量2.4,恢复血量为6.0赚了3.6
+
+
+当前血量为40.0时候使用技能消耗血量3.2,恢复血量为3.6赚了0.4
+当有不死鸟之眼时候
+当前血量为40.0时候使用技能消耗血量3.2,恢复血量为4.9赚了1.7
+
+
+当前血量为50.0时候使用技能消耗血量4.0,恢复血量为3.0亏了1.0
+当有不死鸟之眼时候
+当前血量为50.0时候使用技能消耗血量4.0,恢复血量为3.9亏了0.1
+
+
+当前血量为60.0时候使用技能消耗血量4.8,恢复血量为2.4亏了2.4
+当有不死鸟之眼时候
+当前血量为60.0时候使用技能消耗血量4.8,恢复血量为3.0亏了1.8
+
+
+当前血量为70.0时候使用技能消耗血量5.6,恢复血量为1.8亏了3.8
+当有不死鸟之眼时候
+当前血量为70.0时候使用技能消耗血量5.6,恢复血量为2.1亏了3.5
+
+
+当前血量为80.0时候使用技能消耗血量6.4,恢复血量为1.2亏了5.2
+当有不死鸟之眼时候
+当前血量为80.0时候使用技能消耗血量6.4,恢复血量为1.3亏了5.1
+
+
+当前血量为90.0时候使用技能消耗血量7.2,恢复血量为0.6亏了6.6
+当有不死鸟之眼时候
+当前血量为90.0时候使用技能消耗血量7.2,恢复血量为0.6亏了6.6
+
+
+当前血量为100.0时候使用技能消耗血量8.0,恢复血量为0.0亏了8.0
+当有不死鸟之眼时候
+当前血量为100.0时候使用技能消耗血量8.0,恢复血量为0.0亏了8.0

@@ -6,6 +6,8 @@ import java.math.RoundingMode;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 
 /**
  * Created by Stephen Cai on 2017-10-12 12:47.
@@ -48,9 +50,20 @@ public class StringTest {
         String origin = "953 347 626 340";
         System.out.println(origin.replaceAll("\\s",""));
     }
+
+    public static void format() {
+        System.out.println(String.format("%s, %s 在线订票, %s 行程, %s 价格, %s 时间, %s 资讯", "关键词","关键词","关键词","关键词","关键词","关键词"));
+        System.out.println(new DateTime().getYear());
+        String keyword = "帅哥";
+        System.out.println(StringUtils.replace("票牛为您提供" + new DateTime().getYear() + "最新 关键词 在线订票、关键词 价格、关键词 行程、关键词 时间等资讯服务。票牛是"
+            + "一家热爱生活并热爱现场娱乐的公司，希望让更多人感受现场，享受快乐 我们对接了各大票务平台、主办方、票务代理和场馆资源，为用户提供各类演出票品，同时也为热"
+            + "爱演出的用户提供优质演出信息内容和交流平台 我们希望通过技术手段来打造对消费者负责、保障消费者权益的购票平台，鼓励好卖家、淘汰不靠谱卖家，确保每一个热爱演出的观众买得到票，买得放心、买得实惠。", "关键词", keyword));
+    }
+
     public static void main(String[] args) throws UnknownHostException {
-        Integer i = -1;
-        System.out.println(i);
+        format();
+        //Integer i = -1;
+        //System.out.println(i);
         //nullPlus();
         trim();
     }
