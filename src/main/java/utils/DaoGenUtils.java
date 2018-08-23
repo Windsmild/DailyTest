@@ -1,3 +1,15 @@
+package utils;
+
+import com.google.common.collect.Lists;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+import webMagic.GetquestionUrlProcessor;
+
 /**
  * @author Stephen Cai
  * @date 2018-08-22 15:20
@@ -91,6 +103,6 @@ public class DaoGenUtils {
 
     public static void main(String[] args) {
         //genParam(Lists.newArrayList("orderId", "ticketAmount", "speedPackAmount", "convertStatus", "realTicketGroupId", "failType"));
-        genDataSchema(SnapUpConvertLog.class);
+        genDataSchema(GetquestionUrlProcessor.class);
     }
 }
