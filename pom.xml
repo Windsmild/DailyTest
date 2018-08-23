@@ -155,11 +155,6 @@
       <version>1.4.10</version>
     </dependency>
     <dependency>
-      <groupId>JZSignature</groupId>
-      <artifactId>JZSignature</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>com.alipay.sdk</groupId>
       <artifactId>alipay-sdk-java</artifactId>
       <version>3.3.4.ALL</version>
