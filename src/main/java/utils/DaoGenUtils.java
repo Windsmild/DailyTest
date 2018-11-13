@@ -87,6 +87,8 @@ public class DaoGenUtils {
         } else if (fieldType == Integer.class || fieldType == int.class) {
             if (field.getName().toLowerCase().contains("type") || field.getName().toLowerCase().contains("status")) {
                 return "TINYINT(4) NOT NULL,";
+            } else if (field.getName().equals("id")){
+                return "INT(11) NOT NULL AUTO_INCREMENT,";
             } else {
                 return "INT(11) NOT NULL,";
             }
