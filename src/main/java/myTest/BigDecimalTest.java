@@ -1,13 +1,13 @@
 package myTest;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import lombok.Data;
 
 /**
  * Created by Stephen Cai on 2017-10-19 15:52.
  */
-public class BigDecimalTest {
+public class BigDecimalTest implements Serializable {
     public static final BigDecimal ZERO = newBigDecimal(0);
 
     public static final BigDecimal ONE = newBigDecimal(1);
@@ -43,10 +43,7 @@ public class BigDecimalTest {
         System.out.println(BigDecimal.valueOf(1).divide(new BigDecimal("3")));
 
     }
-    @Data
-    static class Venue {
-        private BigDecimal time;
-    }
+
     public static void main(String[] args) {
         cantDivide();
         //movePoint();
