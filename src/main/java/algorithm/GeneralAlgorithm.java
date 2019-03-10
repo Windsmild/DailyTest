@@ -1,7 +1,5 @@
 package algorithm;
 
-import edu.princeton.cs.algs4.StdDraw;
-
 /**
  * @author Stephen Cai
  * @date 2018-07-20 17:39
@@ -13,9 +11,9 @@ public class GeneralAlgorithm {
       int r = p%q;
       return gcd(q,r);
     }
-    public static void draw() {
-        StdDraw.circle(1,1,1);
-    }
+    //public static void draw() {
+    //    StdDraw.circle(1,1,1);
+    //}
     public static void main(String[] args) {
         System.out.println(Integer.toBinaryString(64));
         System.out.println(Double.POSITIVE_INFINITY -1);
