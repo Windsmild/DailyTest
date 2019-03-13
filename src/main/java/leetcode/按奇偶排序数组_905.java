@@ -8,7 +8,7 @@ import java.util.List;
  * @author Stephen Cai
  * @date 2019-03-10 18:00
  */
-public class 按奇偶排序数组905 {
+public class 按奇偶排序数组_905 {
     public static int[] sortArrayByParity(int[] A) {
         List<Integer> even = new ArrayList<Integer>(A.length);
         List<Integer> odd = new ArrayList<Integer>(A.length);

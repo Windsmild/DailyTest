@@ -17,7 +17,7 @@ import java.util.Map;
  * @author Stephen Cai
  * @date 2019-03-10 18:08
  */
-public class 两数之和1 {
+public class 两数之和_1 {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length ; i++) {
