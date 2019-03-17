@@ -1,4 +1,4 @@
-package threadPool;
+package thread;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

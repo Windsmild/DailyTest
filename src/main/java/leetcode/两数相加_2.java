@@ -15,7 +15,7 @@ package leetcode;
  * @author Stephen Cai
  * @date 2019-03-10 18:19
  */
-public class 两数相加2 {
+public class 两数相加_2 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
    ListNode dummyHead = new ListNode(0);
     ListNode p = l1, q = l2, curr = dummyHead;
@@ -47,8 +47,3 @@ public class 两数相加2 {
         addTwoNumbers(l1,l2);
     }
 }
-   class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-  }
