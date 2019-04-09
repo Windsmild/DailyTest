@@ -18,34 +18,46 @@ public class 数组中的第K个最大元素_215 {
         }
         return queue.poll();
     }
-    //快速选择 ：时间复杂度 O(N)，空间复杂度 O(1) 不过最坏情况仍然是O(n2)
-    public int findKthLargest2(int[] nums, int k) {
-        if (nums.length == 0 || nums == null) return 0;
-        int left = 0, right = nums.length - 1;
-        while (true) {
-            int position = partition(nums, left, right);
-            if (position == k - 1) return nums[position]; //每一轮返回当前pivot的最终位置，它的位置就是第几大的，如果刚好是第K大的数
-            else if (position > k - 1) right = position - 1; //二分的思想
-            else left = position + 1;
-        }
+    //TODO 快速选择 ：时间复杂度 O(N)，空间复杂度 O(1) 不过最坏情况仍然是O(n2)
+    public static int findKthLargestByQuickSort(int[] arr,int k) {
+        return findKthLargestByQuickSort(arr, 0,arr.length -1 ,k);
     }
-
-    private int partition(int[] nums, int left, int right) {
-        int pivot = left;
-        int l = left + 1; //记住这里l是left + 1
-        int r = right;
-        while (l <= r) {
-            while (l <= r && nums[l] >= nums[pivot]) l++; //从左边找到第一个小于nums[pivot]的数
-            while (l <= r && nums[r] <= nums[pivot]) r--; //从右边找到第一个大于nums[pivot]的数
-            if (l <= r && nums[l] < nums[pivot] && nums[r] > nums[pivot]) {
-                swap(nums, l++, r--);
+    public static int findKthLargestByQuickSort(int[] arr,int low,int high,int k) {
+        int i,j,standard;
+        i = low;
+        j = high;
+        standard = arr[low];
+        while (i < j) {
+            //先看右边，依次往左递减,直到找到比standard小的
+            while (standard <= arr[i] && i < j) {
+                j--;
+            }
+            //再看左边，依次向右递增,直到找到比standard大的
+            while (standard >= arr[i] && i<j) {
+                i++;
+            }
+            if (i<j) {
+                swap(arr, i,j);
             }
         }
-        swap(nums, pivot, r); //交换pivot到它所属的最终位置，也就是在r的位置，因为此时r的左边都比r大，右边都比r小
-        return r; //返回最终pivot的位置
+        //最后将基准为与i和j相等位置的数字交换
+        arr[low] = arr[i];
+        arr[i] = standard;
+        if ( i == k) {
+            return arr[i];
+        }
+        if (i < k) {
+            //如果i在k的左边，说明k在右半区,递归调用右半数组
+            return findKthLargestByQuickSort(arr,j+1,high, k);
+        } else {
+            //递归调用左半数组
+            return findKthLargestByQuickSort(arr,low,j+1, k);
+        }
+
     }
 
-    private void swap(int[] nums, int l, int r) {
+
+    private static void swap(int[] nums, int l, int r) {
         int tmp = nums[l];
         nums[l] = nums[r];
         nums[r] = tmp;
