@@ -11,7 +11,7 @@ package 数据结构与算法之美;
  * @author Stephen Cai
  * @date 2019-04-08 18:25
  */
-public class 最大公约数 {
+public class 最大公约数辗转相除法 {
     public static int gcd(int numA, int numB) {
         if (numA == numB) {
             return numA;
