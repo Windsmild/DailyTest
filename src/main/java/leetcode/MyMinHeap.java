@@ -1,15 +1,20 @@
 package leetcode;
 
+import org.apache.commons.lang.math.RandomUtils;
+
 /**
+ * https://juejin.im/post/5cb9d605e51d456e51614aa3
+ * 最详细版图解优先队列（堆）
+ * 小顶堆
  * @author Stephen Cai
  * @date 2019-03-05 14:56
  */
-public class TopK2 {
+public class MyMinHeap {
     int[] items;
     int currentSize = 0;
 
     // 初始化为size + 1，从下标1开始保存元素。
-    public TopK2(int size) {
+    public MyMinHeap(int size) {
         items = new int[size + 1];
     }
 
@@ -68,9 +73,9 @@ public class TopK2 {
     }
 
     public static void main(String[] args) {
-        TopK2 topK = new TopK2(10);
+        MyMinHeap topK = new MyMinHeap(10);
         for (int i = 1; i <= 100; i++) {
-            topK.insert(i);
+            topK.insert(RandomUtils.nextInt(100));
         }
         for (int j = 1; j <= topK.currentSize; j++) {
             System.out.print(topK.items[j] + " ");

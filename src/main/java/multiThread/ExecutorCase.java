@@ -1,4 +1,4 @@
-package thread;
+package multiThread;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

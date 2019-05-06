@@ -28,7 +28,7 @@ public class QuickSort {
                 swap(arr, i,j);
             }
         }
-        //最后将基准为与i和j相等位置的数字交换
+        //最后将基准为与i和j相等位置的数字交换 low即第一位数字;
         arr[low] = arr[i];
         arr[i] = standard;
         //递归调用左半数组
