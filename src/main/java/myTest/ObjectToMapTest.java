@@ -1,13 +1,17 @@
 package myTest;
 
+import com.google.common.collect.Lists;
+import entity.AucRawDto;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
+ * 反射
  * Created by Stephen Cai on 2017-06-27 16:19.
  */
 public class ObjectToMapTest {
@@ -42,6 +46,32 @@ public class ObjectToMapTest {
 
 		return map;
 	}
+    public static List<AucRawDto> sortByFieldName(List<AucRawDto> list, String fieldName) throws NoSuchFieldException {
+        Field field = AucRawDto.class.getDeclaredField(fieldName);
+        //if (!String.class.isAssignableFrom(field.getType())) {
+        //    throw new IllegalArgumentException("Field is not a string!");
+        //}
 
+        field.setAccessible(true);
+        return list.stream()
+            .sorted((first, second) -> {
+                try {
+                    String a = String.valueOf(field.get(first));
+                    String b = String.valueOf(field.get(second));
+                    return a.compareTo(b);
+                } catch (IllegalAccessException e) {
+                    throw new RuntimeException("Error", e);
+                }
+            })
+            .collect(Collectors.toList());
+    }
 
+    public static void main(String[] args) throws Exception {
+        AucRawDto d1 = new AucRawDto("1",1,4,11);
+        AucRawDto d2 = new AucRawDto("2",2,2,22);
+        AucRawDto d3 = new AucRawDto("3",3,3,33);
+        List l = Lists.newArrayList(d1,d2,d3);
+        ObjectToMapTest.objectToMap(d1);
+        System.out.println(sortByFieldName(l,"conv_num"));
+    }
 }
